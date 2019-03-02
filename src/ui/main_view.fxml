@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.View">
+    <children>
+        <Label layoutX="86.0" layoutY="81.0" text="Status: ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="status" layoutX="153.0" layoutY="83.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Slider fx:id="joint1S" layoutX="127.0" layoutY="143.0" max="140.0" min="-150.0" orientation="VERTICAL" />
+      <Slider fx:id="joint2S" layoutX="194.0" layoutY="143.0" max="110.0" min="-110.0" orientation="VERTICAL" />
+      <Slider fx:id="joint3S" layoutX="257.0" layoutY="143.0" max="115.0" min="-115.0" orientation="VERTICAL" />
+      <Slider fx:id="joint4S" layoutX="320.0" layoutY="143.0" max="161.0" min="-161.0" orientation="VERTICAL" />
+      <Slider fx:id="joint5S" layoutX="391.0" layoutY="143.0" max="115.0" min="-115.0" orientation="VERTICAL" />
+      <Slider fx:id="joint6S" layoutX="458.0" layoutY="143.0" max="161.0" min="-161.0" orientation="VERTICAL" />
+      <Label layoutX="111.0" layoutY="303.0" text="Joint 1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+        <Label layoutX="178.0" layoutY="303.0" text="Joint 2">
+            <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+        </Label>
+      <Label layoutX="241.0" layoutY="303.0" text="Joint 3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+        <Label layoutX="304.0" layoutY="303.0" text="Joint 4">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="375.0" layoutY="303.0" text="Joint 5">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="442.0" layoutY="303.0" text="Joint 6">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+      <ToggleButton fx:id="connectBtn" layoutX="437.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#onToggleClicked" text="CONNECT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></ToggleButton>
+    </children>
+</AnchorPane>
